@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h1>Gatos mensuales</h1>
+  <section class="presupuestoContainer">
+    <h2>Coloca tu Presupuesto Mensual</h2>
+    <input type="number" id="presupuestoId" name="presupuesto" placeholder="Presupuesto"/>
+    <button onclick="guardarPresupuesto()" class="button" id="buttonId">
+      Agregar Presupuesto</button>
+    <br>
+    <br>
+    <div id="mostrarPresupuesto"></div>
+  </section> 
+  <section>
+    <h2>Coloca tu Gasto</h2>
+    <input type="text" id="nombreGastoId" name="nombreGasto" placeholder="Nombre de su Gasto"/>
+    <input type="number" id="costoGastoId" name="costoGasto" placeholder="Costo del Gasto"/>
+    <button onclick="guardarCosto()" class="button" id="buttonId"> Agregar Gasto</button>
+  </section>
+  <br>
+  <button onclick="calcular()" class="button" id="buttonId"> Calcular</button>
+  <h2>Resultado</h2>
+  <div id="resultado"></div>
+  <script src="main.js"></script>  
+</body>
+</html>
